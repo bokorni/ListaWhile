@@ -6,11 +6,18 @@
     */
 
     //Entrada
-
+    let name = prompt(`Insira o seu nome de usuário.`);
+    let password = prompt(`Insira a sua senha.`);
 
     //Processamento
+    while (name === password) {
+        alert(`Sua senha não pode ser igual o seu nome de usuário.`)
 
+        name = prompt(`Insira o seu nome de usuário.`);
+        password = prompt(`Insira a sua senha.`);
 
+    }
+    alert(`Senha válida, tenha um bom dia.`)
     //Saída
 
 </script>

@@ -11,7 +11,14 @@
     */
 
     //Entrada
-
+    let name = prompt(`Insira seu nome.`.trim());
+    let id = Number(prompt(`Insira sua idade.`.trim()));
+    let salario = Number((`Insira seu salário.`.trim()));
+    let sex = prompt(`Insira seu sexo ("F" para feminino e "M" para masculino)`.trim().toUpperCase());
+    let civil = prompt(`Insira seu estado civil ("S" para solteiro, "C" para casado, "V" para viúvo e "D" para divorciado)`.trim().toUpperCase());
+     while (name.lenght < 3 || idade > 0 || salario > 0 || sex != "M" && sex != "F" || civil != "S" && civil != "C" && civil != "V" && civil != "D") {
+        
+     }
 
     //Processamento
 

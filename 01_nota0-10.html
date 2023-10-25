@@ -4,9 +4,15 @@
     Problema: Nota entre 0 e 10
     Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
     */
-
     //Entrada
 
+    let num = Number(prompt(`Insira um número de 0 à 10.`).trim());
+    while (num < 0 || num > 10 || isNaN(num)) {
+        alert(`Valor incorreto.`)
+        num = Number(prompt(`Insira um número de 0 à 10.`).trim());
+    }
+
+    alert(num);
 
     //Processamento
 
