@@ -20,6 +20,53 @@
     */
 
     //Entrada
+    let jao = 0;
+    let maria = 0;
+    let nulo = 0;
+    let branco = 0;
+
+
+    let voto = 1;
+    while (voto !== 0) {
+        voto = Number(prompt(`Escolha seu candidato: 1-Joãozinho, 2-Mariazinha, 3-Voto nulo, 4-Voto em branco.`));
+
+        if (voto == 1) {
+            jao++
+        }
+        else if (voto == 2) {
+            maria++
+        }
+        else if (voto == 3) {
+            nulo++
+        }
+        else if (voto == 4) {
+            branco++
+        }
+        else if (voto == 0) {
+            null
+        }
+        else {
+            alert(`Voto Inválido`)
+        }
+
+
+
+    }
+
+    alert(`Joãozinho recebeu ${jao} votos; Mariazinha recebeu ${maria} votos; Votos nulos: ${(nulo / (jao + maria + nulo + branco)).toFixed(2).replace(",",".") * 100}%; Votos em branco: ${(branco / (jao + maria + nulo + branco)).toFixed(2).replace(",",".") * 100}%`)
+    if (jao > maria) {
+        alert(`Joãozinho ganhou.`);
+
+    } else if (maria > jao) {
+        alert(`Mariazinha ganhou.`)
+    }
+    else {
+        alert(`Empate.`)
+    }
+
+
+
+
 
 
     //Processamento
@@ -28,5 +75,3 @@
     //Saída
 
 </script>
-
-

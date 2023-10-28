@@ -6,11 +6,18 @@
     */
 
     //Entrada
-
+    let password = parseInt(prompt('Insira uma senha SOMENTE com 4 números.'))
+    let verifica = Number((prompt(`Por favor, insira sua senha novamente`)))
+    let conta = 0
 
     //Processamento
-
+    while (password.toString().length !== 4 || verifica !== password) {
+        alert(`Senha inválida.`)
+       password = Number((prompt('informe uma senha com 4 numero (não pode conter letras na senha)')));
+        verifica= Number((prompt(`informe novamente`)));
+        conta++
+    }
+    alert(`Senha validada, tenha um bom-dia.`);
 
     //Saída
-
 </script>
